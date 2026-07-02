@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18294595741"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18294595741');
+</script>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra. Jéssica Macedo Pereira | Fisioterapia Domiciliar</title>
+
+  <style>
+    :root {
+      --verde: #8fb8a8;
+      --verde-escuro: #4f7f6d;
+      --bege: #f7f3ed;
+      --texto: #2f3a36;
+      --branco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: var(--bege);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--verde), #d9e8df);
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 280px;
+      max-width: 90%;
+      margin-bottom: 20px;
+      border-radius: 15px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      color: var(--texto);
+    }
+
+    header p {
+      font-size: 1.15rem;
+      max-width: 780px;
+      margin: 0 auto 25px;
+    }
+
+    .botao {
+      display: inline-block;
+      background: var(--verde-escuro);
+      color: var(--branco);
+      padding: 14px 24px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .botao:hover {
+      opacity: 0.85;
+    }
+
+    nav {
+      background: var(--branco);
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--texto);
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 55px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: var(--verde-escuro);
+    }
+
+    .sobre,
+    .lista,
+    .contato {
+      background: var(--branco);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .foto-profissional {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      background: var(--branco);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .foto-profissional img {
+      width: 400px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .foto-texto {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: var(--branco);
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: var(--verde-escuro);
+      margin-bottom: 10px;
+    }
+
+    .lista ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .lista li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .lista li::before {
+      content: "✓ ";
+      color: var(--verde-escuro);
+      font-weight: bold;
+    }
+
+    .contato {
+      text-align: center;
+    }
+
+    .contato p {
+      margin-bottom: 15px;
+    }
+
+    .contato a {
+      color: var(--verde-escuro);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contato .botao {
+      color: var(--branco);
+      margin-top: 20px;
+    }
+
+    footer {
+      background: var(--verde-escuro);
+      color: var(--branco);
+      text-align: center;
+      padding: 30px 15px;
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 6px 0;
+    }
+
+    .whatsapp-fixo {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px;
+      }
+
+      .foto-profissional {
+        text-align: center;
+        justify-content: center;
+      }
+
+      .foto-profissional img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="imagens/logo-jessica.png" alt="Logo Dra. Jéssica Pereira">
+
+    <h1>Dra. Jéssica Macedo Pereira</h1>
+    <p>Fisioterapia Domiciliar humanizada para crianças, adultos e idosos em Hortolândia/SP e região.</p>
+
+    <a class="botao" href="https://wa.me/5519998900329" target="_blank">
+      Agendar pelo WhatsApp
+    </a>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#profissional">Profissional</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#beneficios">Benefícios</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre o atendimento</h2>
+
+    <div class="sobre">
+      <p>
+        O atendimento fisioterapêutico domiciliar é realizado de forma individualizada, respeitando as necessidades,
+        limitações e objetivos de cada paciente. O cuidado no conforto do lar proporciona mais segurança,
+        praticidade e acolhimento para o paciente e sua família.
+      </p>
+
+      <br>
+
+      <p>
+        A Dra. Jéssica Macedo Pereira atua com fisioterapia, psicomotricidade e reabilitação funcional,
+        oferecendo um plano terapêutico personalizado para promover saúde, independência, funcionalidade
+        e qualidade de vida.
+      </p>
+    </div>
+  </section>
+
+  <section id="profissional">
+    <h2>Conheça a Dra. Jéssica</h2>
+
+    <div class="foto-profissional">
+      <img src="imagens/jessica-faixa.jpeg" alt="Dra. Jéssica Macedo Pereira">
+
+      <div class="foto-texto">
+        <p>
+          Dra. Jéssica Macedo Pereira é Fisioterapeuta, Educadora Física, Psicomotricista, Especialista em ABA (Análise do Comportamento Aplicada) e Pós-graduada em Gerontologia, atuando com atendimento domiciliar humanizado para crianças, adultos e idosos.
+
+Sua trajetória acadêmica multidisciplinar permite uma visão ampla e integrada do cuidado à saúde, possibilitando a elaboração de planos terapêuticos individualizados, alinhados às necessidades, objetivos e particularidades de cada paciente.
+
+Com foco na promoção da saúde, prevenção de complicações, reabilitação funcional, desenvolvimento motor e melhora da qualidade de vida, Dra. Jéssica oferece um atendimento acolhedor, ético e baseado em evidências científicas. O tratamento é realizado no conforto do lar, proporcionando maior comodidade, segurança e participação da família durante o processo terapêutico.
+
+Atendendo crianças, adultos e idosos, seu trabalho busca estimular a autonomia, a independência funcional e o desenvolvimento das capacidades motoras e cognitivas, sempre respeitando o ritmo e as necessidades individuais de cada pessoa.
+
+Formação Acadêmica e Especializações
+
+• Graduação em Fisioterapia
+• Graduação em Educação Física
+• Pós-graduação em Psicomotricidade
+• Especialização em ABA (Análise do Comportamento Aplicada)
+• Pós-graduação em Gerontologia
+
+Compromisso com o Cuidado
+
+Meu propósito é oferecer um atendimento de excelência, pautado na humanização, no respeito e na individualidade de cada paciente, contribuindo para mais saúde, funcionalidade, independência e qualidade de vida.
+        </p>
+
+        <br>
+
+        <p>
+Meu propósito é oferecer um atendimento de excelência, pautado na humanização, no respeito e na individualidade de cada paciente, contribuindo para mais saúde, funcionalidade, independência e qualidade de vida.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <h2>Áreas de atuação</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Fisioterapia Infantil</h3>
+        <p>Atendimento voltado ao desenvolvimento motor, coordenação, equilíbrio e funcionalidade da criança.</p>
+      </div>
+
+      <div class="card">
+        <h3>Fisioterapia Geriátrica</h3>
+        <p>Prevenção de quedas, melhora da mobilidade, fortalecimento e promoção da autonomia do idoso.</p>
+      </div>
+
+      <div class="card">
+        <h3>Reabilitação Motora</h3>
+        <p>Tratamento para dores, limitações de movimento, fraqueza muscular e recuperação funcional.</p>
+      </div>
+
+      <div class="card">
+        <h3>Psicomotricidade</h3>
+        <p>Estímulos para coordenação motora, equilíbrio, lateralidade, percepção corporal e planejamento motor.</p>
+      </div>
+
+      <div class="card">
+        <h3>Fisioterapia Neurológica</h3>
+        <p>Acompanhamento para pacientes com alterações neurológicas, visando funcionalidade e independência.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios">
+    <h2>Por que escolher o atendimento domiciliar?</h2>
+
+    <div class="lista">
+      <ul>
+        <li>Mais conforto e comodidade para o paciente.</li>
+        <li>Atendimento personalizado de acordo com a rotina familiar.</li>
+        <li>Maior segurança para crianças, adultos e idosos.</li>
+        <li>Tratamento individualizado e humanizado.</li>
+        <li>Acompanhamento próximo da família e dos responsáveis.</li>
+        <li>Evita deslocamentos e facilita a continuidade do tratamento.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Entre em contato</h2>
+
+    <div class="contato">
+      <p><strong>WhatsApp:</strong> (19) 99890-0329</p>
+
+      <p>
+        <strong>Instagram:</strong>
+        <a href="https://www.instagram.com/drajessicapereirafisio" target="_blank">
+          @drajessicapereirafisio
+        </a>
+      </p>
+
+      <p><strong>Atendimento:</strong> Hortolândia/SP e região</p>
+
+      <a class="botao" href="https://wa.me/5519998900329" target="_blank">
+        Quero agendar uma avaliação
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Dra. Jéssica Macedo Pereira</p>
+    <p>Fisioterapeuta | Psicomotricista | Educadora Física</p>
+    <p>CREFITO 422201-F | CREF 152902-G/SP</p>
+  </footer>
+
+  <a class="whatsapp-fixo" href="https://wa.me/5519998900329" target="_blank">WhatsApp</a>
+
+</body>
+</html>
